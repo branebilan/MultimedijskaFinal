@@ -1,0 +1,71 @@
+header {
+    background-color: rgb(56, 42, 18);
+    height: 120px;
+    width: 1900px;
+    opacity: 0.8;
+}
+
+.naslov {
+    font-size: 55px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 5px;
+    margin-left: 345px;
+    padding-top: 30px;
+}
+
+nav {
+    background-color: rgb(118, 106, 85);
+    height: 60px;
+    width: 1900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    opacity: 0.8;
+}
+
+.navitem {
+    font-size: 30px;
+    color: black;
+    padding-top: 4px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-left: 25px;
+    margin-top: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navitem:hover {
+    background-color: rgb(218, 192, 128);
+    transition: 1s;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.navclick {
+    font-size: 30px;
+    color: black;
+    padding-right: 40px;
+    padding-left: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.povijest-rere {
+    height: 535px;
+    width: 1600px;
+    background-color: gray;
+    border-radius: 20px;
+    opacity: 0.7;
+    margin-left: 180px;
+    margin-top: 20px;
+}
+
+.historija {
+    height: 30px;
+    text-align: center;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
+}

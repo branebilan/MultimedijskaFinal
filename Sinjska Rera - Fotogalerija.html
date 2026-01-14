@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Sinjska Rera - povijest i karte</title>
+
+    <link rel="stylesheet" href="Sinjska Rera - Fotogalerija.css">
+
+</head>
+
+<body background="Sinjska stanica - wallpaper.png">
+
+    <header>
+        <p class="naslov">Sinjska Rera - Uskotračna željeznička pruga 20. stoljeća</p1>
+    </header>
+    
+    <nav>
+        <a class="navclick" href="index.html" target="_self"><div class="navitem">NASLOVNICA</div></a>
+        <a class="navclick" href="Sinjska Rera - Povijest pruge.html" target="_self"><div class="navitem">POVIJEST PRUGE</div></a>
+        <a class="navclick" href="Sinjska Rera - Fotogalerija.html" target="_self"><div class="navitem">FOTO-GALERIJA</div></a>
+        <a class="navclick" href="Sinjska Rera - Tehnički detalji.html" target="_self"><div class="navitem">TEHNIČKI DETALJI</div></a>
+    </nav>
+
+    <div class="slide-container">
+      <div class="slide fade">
+          <img src="images.jpeg" alt=''>
+          <p style="font-size: 28px; font-family: Segoe UI; color: white; text-align: center; background-color: black;">Karta rere i sve njene željezničke stanice</p>
+        </div>
+        <div class="slide fade">
+          <img src="dicmo-rera-4.png" alt=''>
+          <p style="font-size: 28px; font-family: Segoe UI; color: white; text-align: center; background-color: black;">Rera u centru Dicma</p>
+        </div>
+        <div class="slide fade">
+          <img src="Izgradnja_tunela_Gornja_Rupotina.jpg" alt=''>
+          <p style="font-size: 28px; font-family: Segoe UI; color: white; text-align: center; background-color: black;">Izgradnja tunela Gornja Rupotina</p>
+        </div>
+        <div class="slide fade">
+          <img src="Screenshot_2499.png" alt=''>
+          <p style="font-size: 28px; font-family: Segoe UI; color: white; text-align: center; background-color: black;">Rerin vozni red</p>
+        </div>
+        <div class="slide fade">
+          <img src="m_GS_-_VG_-_SVETKOVINA_page-0001-1.jpg" alt=''>
+          <p style="font-size: 20px; font-family: Segoe UI; color: white; text-align: center; background-color: black;">Ilustracija Rere u Sinju"</p>
+        </div>
+        <div class="slide fade">
+        <img src="Screenshot_2511.png" alt=''>
+        <p style="font-size: 20px; font-family: Segoe UI; color: white; text-align: center; background-color: black;">Rera u Splitu, prije podzemne željeznice</p>
+        </div>
+                <div class="slide fade">
+                <img src="usporedba.png" alt=''>
+                <p style="font-size: 20px; font-family: Segoe UI; color: white; text-align: center; background-color: black;">Satelitska snimka prostora Rere iz 2021. i 1968.</p>
+                </div>
+                <div class="slide fade">
+                <img src="Sinj karta.PNG" alt=''>
+                <p style="font-size: 20px; font-family: Segoe UI; color: white; text-align: center; background-color: black;">Lokacija Rere u Sinju</p>
+                </div>
+                <div class="slide fade">
+                <img src="St trasa.png" alt=''>
+                <p style="font-size: 20px; font-family: Segoe UI; color: white; text-align: center; background-color: black;">Karta Rere u Splitu</p>
+                </div>
+                <div class="slide fade">
+                <img src="karta.svg" alt=''>
+                <p style="font-size: 20px; font-family: Segoe UI; color: white; text-align: center; background-color: black;">Vektorska karta Rere u centru Dicma</p>
+                </div>
+                
+        
+      
+      
+        <a href="#" class="prev" title="Previous">&#10094</a>
+        <a href="#" class="next" title="Next">&#10095</a>
+      </div>
+      <div class="dots-container">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      </body>
+      
+      <script>
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".slide")
+      const dots = document.querySelectorAll('.dot')
+      
+      const init = (n) => {
+        slides.forEach((slide, index) => {
+          slide.style.display = "none"
+          dots.forEach((dot, index) => {
+            dot.classList.remove("active")
+          })
+        })
+        slides[n].style.display = "block"
+        dots[n].classList.add("active")
+      }
+      document.addEventListener("DOMContentLoaded", init(currentSlide))
+      const next = () => {
+        currentSlide >= slides.length - 1 ? currentSlide = 0 : currentSlide++
+        init(currentSlide)
+      }
+      
+      const prev = () => {
+        currentSlide <= 0 ? currentSlide = slides.length - 1 : currentSlide--
+        init(currentSlide)
+      }
+      
+      document.querySelector(".next").addEventListener('click', next)
+      
+      document.querySelector(".prev").addEventListener('click', prev)
+      
+      
+      setInterval(() => {
+        next()
+      }, 5000);
+      
+      dots.forEach((dot, i) => {
+        dot.addEventListener("click", () => {
+          console.log(currentSlide)
+          init(i)
+          currentSlide = i
+        })
+      })
+      </script>
+      
+      </html>
+
+</body>

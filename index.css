@@ -1,0 +1,210 @@
+header {
+    background-color: rgb(56, 42, 18);
+    height: 120px;
+    width: 2100px;
+    opacity: 0.8;
+}
+
+.naslov {
+    font-size: 55px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 5px;
+    margin-left: 455px;
+    padding-top: 30px;
+}
+
+nav {
+    background-color: rgb(118, 106, 85);
+    height: 60px;
+    width: 2100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    opacity: 0.8;
+}
+
+.navitem {
+    font-size: 30px;
+    color: black;
+    padding-top: 2px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-left: 25px;
+    margin-top: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navitem-2 {
+    font-size: 30px;
+    color: black;
+    padding-top: 2px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-left: 25px;
+    margin-top: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navitem:hover {
+    background-color: rgb(218, 192, 128);
+    transition: 1s;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.navclick {
+    font-size: 30px;
+    color: black;
+    padding-right: 40px;
+    padding-left: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.anketa {
+    display: block;
+    height: 470px;
+    width: 600px;
+    background-color: lightgray;
+    margin-left: 125px;
+    margin-top: 40px;
+    margin-right: 235px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: white;
+    opacity: 0.8;
+}
+
+.gornji-flexbox {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    margin-left: 2px;
+}
+
+.donji-flexbox {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.pochetna {
+    display: block;
+    height: 390px;
+    width: 650px;
+    background-color: darkgray;
+    margin-top: 20px;
+    opacity: 0.8;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: white;
+}
+
+.pochetna-dva {
+    display: block;
+    height: 470px;
+    width: 660px;
+    background-color: darkgray;
+    margin-top: 38px;
+    margin-left: 95px;
+    opacity: 0.8;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: white;
+}
+
+.dobrodoshlica {
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 223px;
+    margin-top: 30px;
+}
+
+.poddobrodoshlica {
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 30px;
+    margin-top: 25px;
+}
+
+.forme {
+    margin-top: 30px;
+    width: 100px;
+    height: 120px;
+    margin-left: 57px;
+    margin-bottom: 10px;
+}
+
+.dicmo {
+    margin-top: 5px;
+    width: 580px;
+    height: 290px;
+    margin-left: 31px;
+    margin-bottom: 5px;
+}
+
+.raspored-voznji {
+    margin-top: 15px;
+    width: 580px;
+    height: 320px;
+    margin-left: 35px;
+    margin-bottom: 5px;
+}
+
+.povijest-section {
+    height: 390px;
+    width: 640px;
+    background-color: darkgray;
+    margin-top: 20px;
+    margin-left: 145px;
+    opacity: 0.8;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: white;
+}
+
+.povijest-paragraph {
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 198px;
+    margin-top: 30px;
+}
+
+.kolodvor-slika {
+    margin-left: 92px;
+    margin-top: 5px;
+}
+
+.linkovi {
+    background-color: darkgray;
+    display: inline-block;
+    height: 90px;
+    width: 651px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    margin-left: 1px;
+    opacity: 0.8;
+}
+
+.link2 {
+    display: inline-block;
+}
+
+.karte {
+    border-style: solid;
+    border-width: 10px;
+    border-color: white;
+    margin-left: 0px;
+    margin-right: 70px;
+    opacity: 0.98;
+    height: 390px;
+    width: 640px;
+    }
